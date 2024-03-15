@@ -40,6 +40,7 @@
 
       setTimeout(() => {
         selectPreferredQuality();
+        setPlaybackRateToPreference();
       }, 100)
     });
 
@@ -84,6 +85,18 @@
     }
 
     targetItem.click();
+  }
+
+  function setPlaybackRateToPreference() {
+    var preferredRate = 2;
+    setPlaybackRate(preferredRate);
+  }
+
+  function setPlaybackRate(rate) {
+    var video = document.querySelector('video');
+    if (video) {
+      video.playbackRate = rate;
+    }
   }
 
   function findTargetItem(preferredQuality, targetItems) {
