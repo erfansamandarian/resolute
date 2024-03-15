@@ -4,7 +4,7 @@
 
 ## max quality, live life to the max
 
-chrom(ium) extension that automatically selects highest possible resolution in video playback
+chrom(ium) extension that automatically selects highest possible resolution in video playback && increases playback speed from 1 => 2
 
 <p>
   <img title="youtube-1" alt="youtube-1" width="45%" src="screenshots/youtube_1.png">
