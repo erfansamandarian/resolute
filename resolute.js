@@ -7,12 +7,7 @@
 
   function runObserverIfExtensionEnabled() {
     chrome.storage.sync.get(['extensionEnabled'], function (result) {
-      if (result.extensionEnabled !== undefined && result.extensionEnabled === false) {
-        console.log('Simple Auto HD Extension Disabled. Please enable it through popup menu.');
-      } else {
-        console.log('Simple Auto HD Extension Enabled. Proceeding to initiate observer ');
-        initiateObserverAndObserve();
-      }
+      initiateObserverAndObserve();
     });
   }
 
