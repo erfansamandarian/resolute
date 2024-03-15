@@ -7,6 +7,6 @@
 chrom(ium) extension that automatically selects highest possible resolution in video playback
 
 <p>
-  <img title="youtube-1" alt="youtube-1" width="32%" src="screenshots/youtube_1.png">
-  <img title="youtube-2" alt="youtube-2" width="32%" src="screenshots/youtube_2.png">
+  <img title="youtube-1" alt="youtube-1" width="50%" src="screenshots/youtube_1.png">
+  <img title="youtube-2" alt="youtube-2" width="50%" src="screenshots/youtube_2.png">
 </p>
