@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "resolute",
+  "description": "resolute in resolution",
+  "version": "1.0",
+  "author": "Erfan Samandarian",
+  "icons": {
+    "16": "resolute.png",
+    "48": "resolute.png",
+    "128": "resolute.png"
+  },
+  "action": {
+    "default_title": "",
+    "default_icon": "resolute.png",
+    "default_popup": "resolute.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*"
+      ],
+      "exclude_globs": [
+        "*/embed/*",
+        "*/tv#/*",
+        "*/tv/*"
+      ],
+      "all_frames": true,
+      "js": [
+        "resolute.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ]
+}
