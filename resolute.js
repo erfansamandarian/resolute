@@ -87,6 +87,10 @@
     targetItem.click();
   }
 
+  // use same button as above to induce playback rate
+  // instead of video.setPlaybackRate(...) so it looks
+  // congruent on the video playback interface on yt
+
   function setPlaybackRateToPreference() {
     var preferredRate = 2;
     setPlaybackRate(preferredRate);
