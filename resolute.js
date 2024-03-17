@@ -1,11 +1,11 @@
 (function () {
-  document.addEventListener('yt-navigate-finish', function (event) {
+  document.addEventListener('yt-navigate-finish', function (event) { // loads extension once youtube video finalised loading
     if (location.pathname === '/watch') {
       runObserverIfExtensionEnabled();
     }
   });
 
-  function runObserverIfExtensionEnabled() {
+  function runObserverIfExtensionEnabled() { // checks if extension is enabled and loads function observer
     chrome.storage.sync.get(['extensionEnabled'], function (result) {
       initiateObserverAndObserve();
     });
@@ -40,7 +40,6 @@
 
       setTimeout(() => {
         selectPreferredQuality();
-        setPlaybackRateToPreference();
       }, 100)
     });
 
@@ -90,18 +89,6 @@
   // use same button as above to induce playback rate
   // instead of video.setPlaybackRate(...) so it looks
   // congruent on the video playback interface on yt
-
-  function setPlaybackRateToPreference() {
-    var preferredRate = 2;
-    setPlaybackRate(preferredRate);
-  }
-
-  function setPlaybackRate(rate) {
-    var video = document.querySelector('video');
-    if (video) {
-      video.playbackRate = rate;
-    }
-  }
 
   function findTargetItem(preferredQuality, targetItems) {
     var targetItem = '';
