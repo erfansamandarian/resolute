@@ -1,6 +1,6 @@
 # resolute
 
-<img title="hd" alt="hd" height="256" width="256" src="resolute.png">
+<img title="hd" alt="hd" height="256" width="256" src="resolute.jpeg">
 
 ## todo
 
